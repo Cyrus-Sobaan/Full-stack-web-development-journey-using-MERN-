@@ -1,175 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript</title>
 </head>
+
 <body>
-    <h2>Operaters and conditional statements in javascript</h2>
-    <h2>arithmetic operators</h2>
-    <script>
-// Arithmetic operators
-      {
-        console.log("This is arithmetic operators")
-        let a = 5;
-        let b = 4;
-        console.log("Additional operator")
-        console.log("a = 5 & b = 4")
-        console.log("a + b =", a+b)
-        
-        console.log("Substraction operator")
-        console.log("a = 5 & b = 4")
-        console.log("a - b =", a-b)
-        
+  <h2>Operaters and conditional statements in javascript</h2>
+  <h2>arithmetic operators</h2>
+  <script>
+    // Arithmetic operators
+    {
+      console.log("This is arithmetic operators")
+      let a = 5;
+      let b = 4;
+      console.log("Additional operator")
+      console.log("a = 5 & b = 4")
+      console.log("a + b =", a + b)
+
+      console.log("Substraction operator")
+      console.log("a = 5 & b = 4")
+      console.log("a - b =", a - b)
+
+
+      console.log("Multiplication/asteric operator")
+      console.log("a = 5 & b = 4")
+      console.log("a * b =", a * b)
+
+      console.log("Modulus operator")
+      console.log("a = 5 & b = 4")
+      console.log("a % b =", a % b)
+
+      console.log("Divide operator")
+      console.log("a = 5 & b = 4")
+      console.log("a / b =", a / b)
+
+      console.log("Exponentiation operator")
+      console.log("a = 5 & b = 4")
+      console.log("a ** b =", a ** b)
+
+    }
+    // Unary operators / increament 
+    {
+      console.log("Unary operators / increament ")
+      let a = 5;
+      let b = 4;
+      //  a = a+1;
+      a++;
+      console.log(a)
+    }
+
+    {
+      console.log("Decrement operator")
+      let a = 5;
+      let b = 4;
+      a = a - 1;
+      console.log(a)
+    }
+    // Assignment operators
+    {
+      console.log(" additional-equal operators ")
+      let a = 5;
+      let b = 4;
+      a += 5;// a = a + 5
+      console.log("a=", a);
+    }
+
+    {
+      console.log(" Substract-equal operators ")
+      let a = 5;
+      let b = 4;
+      a -= 4;// a = a - 5
+      console.log("a=", a);
+    }
+
+    {
+      console.log(" Modulus-equal operators ")
+      let a = 5;
+      let b = 4;
+      a %= 4;// a = a % 5
+      console.log("a=", a);
+    }
+
+    {
+      console.log(" Asteric-equal operators ")
+      let a = 5;
+      let b = 4;
+      a *= 4;// a = a * 5
+      console.log("a=", a);
+    }
+
+    {
+      console.log("Increament-equal operators ")
+      let a = 5;
+      let b = 4;
+      a **= 4;// a = a ** 5
+      console.log("a=", a);
+    }
+
+    {
+      console.log("Divide-equal operators ")
+      let a = 5;
+      let b = 4;
+      a /= 4;// a = a / 5
+      console.log("a=", a);
+    }
+    // Comparison operators
+    {
+      console.log("This is comparison operators")
+      let a = 5;
+      let b = 4;
+      console.log("5=", a == b)
+    }
+
+    {
+      console.log("Equalto operators")
+      let a = 5;
+      let b = 4;
+      console.log("5=", a == b)
+    }
+
+    {
+      console.log("Equalto & type ")
+      let a = 5;
+      let b = 4;
+      console.log("5=", a === b)
+    }
+
+    {
+      console.log(" Not equalto")
+      let a = 5;
+      let b = 4;
+      console.log("5=", a != b)
+    }
+
+    {
+      console.log(" Not equalto & type")
+      let a = 5;
+      let b = 4;
+      console.log("5=", a !== b)
+    }
+
+    {
+      console.log("greaterthan operators")
+      let a = 5;
+      let b = 4;
+      console.log("5=", a > b)
+    }
+
+    {
+      console.log("Greaterthen-equal operators")
+      let a = 5;
+      let b = 4;
+      console.log("5=", a >= b)
+    }
+
+    {
+      console.log("lessthen operators")
+      let a = 5;
+      let b = 4;
+      console.log("5=", a < b)
+    }
+
+    {
+      console.log("lessthen-equal operators")
+      let a = 5;
+      let b = 4;
+      console.log("5=", a <= b)
+    }
+    // Logical operators
+    {
+      console.log("Logical operators")
+      let a = 5;
+      let b = 6;
+      console.log("condition1 && condition2 = ",a < b && a===b)
+    }
+
+    {
+      console.log("Logical operators")
+      let a = 5;
+      let b = 6;
+      console.log("condition1 || condition2 = ",a < b || a===b)
+    }
+
+
+    {
+      console.log("Logical operators")
+      let a = 5;
+      let b = 6;
+      console.log("condition1 ! condition2 = ",!(a < b))
+    }
+
     
-        console.log("Multiplication/asteric operator")
-        console.log("a = 5 & b = 4")
-        console.log("a * b =", a*b)
-      
-        console.log("Modulus operator")
-        console.log("a = 5 & b = 4")
-        console.log("a % b =", a % b)
-     
-        console.log("Divide operator")
-        console.log("a = 5 & b = 4")
-        console.log("a / b =", a/b)
-    
-        console.log("Exponentiation operator")
-        console.log("a = 5 & b = 4")
-        console.log("a ** b =", a ** b)
 
-      }
-// Unary operators / increament 
-      {
-        console.log("Unary operators / increament ")
-         let a = 5;
-         let b = 4;
-        //  a = a+1;
-         a++;
-         console.log(a)
-      }
-
-      {
-        console.log("Decrement operator")
-        let a = 5;
-        let b = 4;
-        a= a-1;
-        console.log(a)
-      }
-// Assignment operators
-      {
-        console.log(" additional-equal operators ")
-        let a = 5;
-        let b = 4;
-        a += 5;// a = a + 5
-        console.log("a=",a);
-      }
-
-      {
-        console.log(" Substract-equal operators ")
-        let a = 5;
-        let b = 4;
-        a -= 4;// a = a - 5
-        console.log("a=",a);
-      }
-
-      {
-        console.log(" Modulus-equal operators ")
-        let a = 5;
-        let b = 4;
-        a %= 4;// a = a % 5
-        console.log("a=",a);
-      }
-
-      {
-        console.log(" Asteric-equal operators ")
-        let a = 5;
-        let b = 4;
-        a *= 4;// a = a * 5
-        console.log("a=",a);
-      }
-
-      {
-        console.log("Increament-equal operators ")
-        let a = 5;
-        let b = 4;
-        a **= 4;// a = a ** 5
-        console.log("a=",a);
-      }
-
-      {
-        console.log("Divide-equal operators ")
-        let a = 5;
-        let b = 4;
-        a /= 4;// a = a / 5
-        console.log("a=",a);
-      }
-// Comparison operators
-      {
-        console.log("This is comparison operators")
-        let a = 5;
-        let b = 4;
-        console.log("5=",a == b)
-      }
-
-      {
-        console.log("Equalto operators")
-        let a = 5;
-        let b = 4;
-        console.log("5=",a == b)
-      }
-
-      {
-        console.log("Equalto & type ")
-        let a = 5;
-        let b = 4;
-        console.log("5=",a === b)
-      }
-
-      {
-        console.log(" Not equalto")
-        let a = 5;
-        let b = 4;
-        console.log("5=",a != b)
-      }
-
-      {
-        console.log(" Not equalto & type")
-        let a = 5;
-        let b = 4;
-        console.log("5=",a !== b)
-      }
-
-      {
-        console.log("greaterthan operators")
-        let a = 5;
-        let b = 4;
-        console.log("5=",a > b)
-      }
-
-      {
-        console.log("Greaterthen-equal operators")
-        let a = 5;
-        let b = 4;
-        console.log("5=",a >= b)
-      }
-
-      {
-        console.log("lessthen operators")
-        let a = 5;
-        let b = 4;
-        console.log("5=",a < b)
-      }
-
-      {
-        console.log("lessthen-equal operators")
-        let a = 5;
-        let b = 4;
-        console.log("5=",a <= b)
-      }
-
-      
-    </script>
+  </script>
 </body>
+
 </html>
