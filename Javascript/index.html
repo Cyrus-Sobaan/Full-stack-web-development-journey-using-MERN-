@@ -335,6 +335,23 @@
   console.log('Grade:',grade);
 }
 
+{
+  console.log("Question 2 - else if with prompt");
+    let score = prompt("Enter your score between (0-100)");
+    let  grade;
+    if(score >= 90 && score <= 100) {
+      grade = 'A';
+    }else if(score >= 80 && score < 89 ) {
+       grade = 'B';
+    }else if(score >= 60 && score < 79 ){
+        grade ='C';
+    }else if(score >= 40 && score < 59){
+         grade='D';
+    }else{
+          grade ="Failed";
+  }
+  console.log('Grade:',grade);
+}
   </script>
 
 </body>
