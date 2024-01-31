@@ -194,13 +194,32 @@
     }
 
     //Conditional Statement
-    let age = 19;
+    {
+      let age = 19;
 
-    if (age >= 18) {
-      console.log("You're elegible for vote");
+      if (age >= 18) {
+        console.log("You're elegible for vote");
+      }
+      if (age < 18) {
+        console.log("not elegible for vote");
+      }
     }
-    if (age < 18) {
-      console.log("not elegible for vote");
+
+    {
+      let mode = "light";
+      let color;
+
+      if(mode === "dark")
+      {
+        color = "black";
+      }
+
+      if(mode === "light")
+      {
+        color = "white";
+      }
+
+      console.log(color);
     }
 
   </script>
