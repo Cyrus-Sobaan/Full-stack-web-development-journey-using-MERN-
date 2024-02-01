@@ -210,47 +210,43 @@
       let mode = "dark";
       let color;
 
-      if(mode === "dark")
-      {
+      if (mode === "dark") {
         color = "black";
       }
 
-      if(mode === "light")
-      {
+      if (mode === "light") {
         color = "white";
       }
 
       console.log(color);
     }
 
-     // if else Statement
+    // if else Statement
 
-     {
+    {
       console.log("if statement");
       let mode = "blue";
       let color;
 
-      if(mode === "dark")
-      {
+      if (mode === "dark") {
         color = "black";
       }
-      else
-      {
+      else {
         color = "white";
       }
 
       console.log(color);
-     }
-// Age Example
-     {
+    }
+    // Age Example
+    {
       console.log("if else statement");
       let age = 15;
-      if (age >= 18){
+      if (age >= 18) {
         console.log("You are an adult");
-      }else{
+      } else {
         console.log("You are a minor");
       }
-     }
+    }
 
     //  Odd Or even number
 
@@ -261,97 +257,107 @@
         console.log(`${num} is Even`);
       } else {
         console.log(`${num} is Odd`)
+      }
+    }
+
+    // Else if Statement
+
+    {
+      console.log("else if statement");
+      let mode = "bluegi";
+      let color;
+      if (mode === "dark") {
+        color = "black";
+      } else if (mode === "light") {
+        color = "white"
+      } else {
+        color = "gray";
+      }
+      console.log(color);
+
+    }
+
+    // Ternary Operator
+    {
+      console.log("Ternary operator");
+      let age = 18;
+      let result = age >= 18 ? "adult" : "not adult";
+      console.log(result);
+    }
+    {
+      console.log("Another way (ternary) operators");
+      let age = 8;
+      let = age >= 18 ? console.log("adult") : console.log("not adult");
+    }
+
+    // Prompt
+    {
+      //   console.log("Prompt question")
+      //  let num = prompt("Enter a number");
+      //  if(num % 5 == 0){
+      //   console.log(num,"The number is divisible by 5");
+      //  } else{
+      //    console.log(num,"The number is not divisible by 5");
+      //  }
+    }
+
+    {
+      //   console.log("Prompt question 2 with alert popup")
+      //  let num = prompt("Enter a number");
+      //  if(num % 5 == 0){
+      //   alert("The number is divisible by 5");
+      //  } else{
+      //    alert("The number is not divisible by 5");
+      //  }
+    }
+
+    // Question 2 else if
+
+    {
+      console.log("Question 2 - else if");
+      let score = 55;
+      let grade;
+      if (score >= 90 && score <= 100) {
+        grade = 'A';
+      } else if (score >= 80 && score < 89) {
+        grade = 'B';
+      } else if (score >= 60 && score < 79) {
+        grade = 'C';
+      } else if (score >= 40 && score < 59) {
+        grade = 'D';
+      } else {
+        grade = "Failed";
+      }
+      console.log('Grade:', grade);
+    }
+
+    {
+      console.log("Question 2 - else if with prompt");
+      let score = prompt("Enter your score between (0-100)");
+      let grade;
+      if (score >= 90 && score <= 100) {
+        grade = 'A';
+      } else if (score >= 80 && score < 89) {
+        grade = 'B';
+      } else if (score >= 60 && score < 79) {
+        grade = 'C';
+      } else if (score >= 40 && score < 59) {
+        grade = 'D';
+      } else {
+        grade = "Failed";
+      }
+      console.log('Grade:', grade);
+    }
+
+    // For loops 
+
+  {
+    console.log("for loop");
+    for(let i=0; i<3;i++) 
+    {
+      console.log(`Loop number ${i+1}`);
     }
   }
-
-  // Else if Statement
-
-  {
-    console.log("else if statement");
-    let mode =  "bluegi";
-    let color;
-    if (mode === "dark") {
-      color = "black";
-    } else if (mode === "light") {
-      color = "white"
-    } else {
-      color = "gray";
-      }
-   console.log(color);
-  
-  }
-
-  // Ternary Operator
-  {
-    console.log("Ternary operator");
-    let age = 18;
-    let result = age >= 18 ? "adult" : "not adult";
-    console.log(result);
-  }
-  {
-    console.log("Another way (ternary) operators");
-    let age = 8;
-    let = age >= 18 ? console.log("adult") : console.log( "not adult");
-  }
-
-  // Prompt
-  {
-  //   console.log("Prompt question")
-  //  let num = prompt("Enter a number");
-  //  if(num % 5 == 0){
-  //   console.log(num,"The number is divisible by 5");
-  //  } else{
-  //    console.log(num,"The number is not divisible by 5");
-  //  }
-  }
-
-  {
-  //   console.log("Prompt question 2 with alert popup")
-  //  let num = prompt("Enter a number");
-  //  if(num % 5 == 0){
-  //   alert("The number is divisible by 5");
-  //  } else{
-  //    alert("The number is not divisible by 5");
-  //  }
-  }
-
-  // Question 2 else if
-
-  {
-    console.log("Question 2 - else if");
-    let score = 55;
-    let  grade;
-    if(score >= 90 && score <= 100) {
-      grade = 'A';
-    }else if(score >= 80 && score < 89 ) {
-       grade = 'B';
-    }else if(score >= 60 && score < 79 ){
-        grade ='C';
-    }else if(score >= 40 && score < 59){
-         grade='D';
-    }else{
-          grade ="Failed";
-  }
-  console.log('Grade:',grade);
-}
-
-{
-  console.log("Question 2 - else if with prompt");
-    let score = prompt("Enter your score between (0-100)");
-    let  grade;
-    if(score >= 90 && score <= 100) {
-      grade = 'A';
-    }else if(score >= 80 && score < 89 ) {
-       grade = 'B';
-    }else if(score >= 60 && score < 79 ){
-        grade ='C';
-    }else if(score >= 40 && score < 59){
-         grade='D';
-    }else{
-          grade ="Failed";
-  }
-  console.log('Grade:',grade);
-}
   </script>
 
 </body>
