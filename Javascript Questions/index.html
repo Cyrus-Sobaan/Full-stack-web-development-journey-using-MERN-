@@ -47,9 +47,27 @@
 
         {
             console.log('\nfor of loop: print all elements in an string');
-            const str = "Hello World";
-            for (let i of str) {
+            let string = "JAvascript";
+            let size = 0;
+            for (let i of string) {
                 console.log(i);
+                size++;
+            }
+            console.log("Size of String is:", size)
+        }
+
+        // for in loop 
+
+        {
+            console.log('\nfor in loop : print all properties and methods of object')
+            let student = {
+                name: "rahul kumar",
+                age: 20,
+                cgpa: 3.8,
+                isPass: true,
+            };
+            for (let key in student) {
+                console.log("key =", key, "value=", student[key]);
             }
         }
 
