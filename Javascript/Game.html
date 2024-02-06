@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Game</title>
+</head>
+<body>
+    <script>
+        let gameNum =  Math.floor(Math.random() * 25) + 1; // Generate a random number between 1 and 25 (inclusive).
+        // Generate a random number between 1 and 50
+        let num1 = Math.floor(Math.random() * 50) + 1;
+        
+        // Prompt the user to guess a number
+        let num2 = prompt("Guess a number between 1 and 50");
+
+        // Convert the input from string to integer
+        num2 = parseInt(num2);
+
+        // Check if the input is not a valid number or is less than 1 or greater than 50        
+        while (isNaN(num2) || num2 < 1 || num2 > 50){
+            alert('Invalid Input! Please enter a number between 1 and 50');
+            num2 = prompt("Please enter a number between 1 and 50: ");
+            num2 = parseInt(num2);                        
+        }
+
+        // Compare the users number with the generated one
+        if (num1 == num2){
+            document.write("<h1>Congratulations! You got it right.</h1>")
+        } else {
+            document.write(`<p>The correct answer was ${num1}. Try again next time.</p>`);
+        }
+    </script>
+    
+</body>
+</html>
