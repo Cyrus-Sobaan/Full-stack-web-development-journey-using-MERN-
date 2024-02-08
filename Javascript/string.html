@@ -64,8 +64,8 @@
 
     }
     {
-         //str.toLowerCase () is used for converting the whole string into lower case letters
-    {
+        //str.toLowerCase () is used for converting the whole string into lower case letters
+        {
             let str = "sobaaan";
             let newStr = str.toLowerCase();
             console.log(newStr)
@@ -73,15 +73,24 @@
     }
 
     //Concatinate  Strings using + operator or concat() function
-     {
+    {
         let firstString = "Hello ";
         let secondString = "World!";
-        let resultString = firstString + " " + secondString ;//using + operator
+        let resultString = firstString + " " + secondString;//using + operator
         console.log(resultString);
 
-        resultString = firstString.concat(" ",secondString);//Using concat() Function
+        resultString = firstString.concat(" ", secondString);//Using concat() Function
         console.log(resultString);
-     }
+    }
+
+    {   //Create a prompt the user enter their a full name. Generate a username  for them  based on the input . start  username with @, followed by their full name and ending  with the fullname length
+
+
+        let fullName = prompt("Enter your name full name without spaces");
+        let userName = "@" + fullName + fullName.length;
+        console.log(userName);
+
+    }
 
 </script>
 
