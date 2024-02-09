@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in Javascript</title>
+</head>
+
+<body>
+    <h1>Arrays in JavaScript</h1>
+    <p>Array is a collection of items that are stored at contiguous memory locations.</p>
+
+    <!-- Declaring an array -->
+    <div id="declaring_array">
+        <h2>Declare Array: </h2>
+        <pre>
+            let arr = [5,6,7]; // An array named 'arr' with elements 5, 6 and 7
+        </pre>
+    </div>
+
+    <!-- Accessing the elements of an array -->
+    <div id="accessing_elements">
+        <h2>Access Elements: </h2>
+        <p>To access individual element from the array we use index number.</p>
+        <pre>
+            console.log(arr[0]); // Output: 5 (The first element)
+            console.log(arr[1]); // Output: 6 (The second element)
+            console.log(arr[2]); // Output: 7 (The third element)
+        </pre>
+    </div>
+
+    <!-- Adding new item to the array using push() method -->
+    <div id="adding_items">
+        <h2>Add Item: </h2>
+        <p>We can add new items to the array using push() function.</p>
+        <pre>
+            arr.push(8);   // Adds 8 to the end of the array
+            console.log(arr); // Output: [5, 6, 7, 8]
+        </pre>
+    </div>
+
+    <!-- Removing items from the array using pop() method -->
+    <div id="removing_items">
+        <h2>Remove Item: </h2>
+        <p>We can remove items from the array using pop() function which removes the last item from the array.</p>
+
+        </p>
+
+        <p> We can remove or delete items from the array using pop(), shift(), unshift() functions. <br>
+
+            - pop(): It removes the last item from the array and returns the removed item. <br>
+            - shift(): It removes the first item from the array and returns the removed item. <br>
+            - unshift(): It adds new items to the beginning of the array and shifts the other items to higher indices.
+            <br>
+            - unshift(): It adds new items to the beginning of the array and returns the new length of the array. <br>
+
+            - unshift(): It adds a new item to the beginning of the array and returns the length of the array after
+            adding the new item.
+        </p>
+        <pre>
+                let x = arr.pop();      // Remove and return the last item in the array
+                                       // Output: 8
+                                       // Now arr is [5, 6, 7]
+
+                let y = arr.shift();     // Remove and return the first item in the array
+                                          // Output: 5
+                                          // Now arr is [6, 7]
+               </pre>
+    </div>
+    </section>
+    @endsection
+    </pre>
+
+    <h1>Array indices</h1>
+    An index in an array refers to its position or key which determines the order in which we store elements in that array. In JavaScript, arrays are zero-indexed, meaning it starts with
+    <ul>
+        <li><a href="#accessing_elements">Accessing elements by index</a></li>
+        <li><a href="#updating_elements">Updating elements by index</a></li>
+        <li><a href="#inserting_elements">Inserting elements by index</a></li>
+    </ul>
+
+    <div id="accessing_elements">
+        <h3>Accessing elements by index</h3>
+        <p>We can access any element of an array using its index.</p>
+        <pre>
+                const arr = [5, 6, 7];
+
+                console.log(arr[0]);   // Output: 5
+                console.log(arr[1]);   // Output: 6
+                console.log(arr[2]);   // Output: 7
+              </pre>
+    </div>
+
+    <div id="updating_elements">
+        <h3>Updating elements by index</h3>
+        <p>To update an element at a specific position we use indexing along with assignment operator (<code>=</code>).</p>
+        <p>To update an element at a specific position we use indexing along with assignment operator (=).</p>
+        <p>To update an element at a specific position we use indexing along with assignment operator (<code>=</code>) to assign a new value to that element.</p>
+        <p>To update an element at a specific position we use indexing along with assignment operator (=).</p>
+
+    <script>
+        {
+            let marks = [5, 2, 6, 9, 4];
+            console.log(marks);
+            console.log(marks.length);//Property
+        }
+        {
+            let name = ["sobaan", "uday", "shailender", "sourabh"];
+            console.log(name);
+        }
+    </script>
+</body>
+
+</html>
