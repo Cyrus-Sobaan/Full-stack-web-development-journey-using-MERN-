@@ -73,7 +73,8 @@
     </pre>
 
     <h1>Array indices</h1>
-    An index in an array refers to its position or key which determines the order in which we store elements in that array. In JavaScript, arrays are zero-indexed, meaning it starts with
+    An index in an array refers to its position or key which determines the order in which we store elements in that
+    array. In JavaScript, arrays are zero-indexed, meaning it starts with
     <ul>
         <li><a href="#accessing_elements">Accessing elements by index</a></li>
         <li><a href="#updating_elements">Updating elements by index</a></li>
@@ -94,22 +95,38 @@
 
     <div id="updating_elements">
         <h3>Updating elements by index</h3>
-        <p>To update an element at a specific position we use indexing along with assignment operator (<code>=</code>).</p>
+        <p>To update an element at a specific position we use indexing along with assignment operator (<code>=</code>).
+        </p>
         <p>To update an element at a specific position we use indexing along with assignment operator (=).</p>
-        <p>To update an element at a specific position we use indexing along with assignment operator (<code>=</code>) to assign a new value to that element.</p>
+        <p>To update an element at a specific position we use indexing along with assignment operator (<code>=</code>)
+            to assign a new value to that element.</p>
         <p>To update an element at a specific position we use indexing along with assignment operator (=).</p>
 
-    <script>
-        {
-            let marks = [5, 2, 6, 9, 4];
-            console.log(marks);
-            console.log(marks.length);//Property
-        }
-        {
-            let name = ["sobaan", "uday", "shailender", "sourabh"];
-            console.log(name);
-        }
-    </script>
+        <script>
+            {
+                let marks = [5, 2, 6, 9, 4];
+                console.log(marks);
+                console.log(marks.length);//Property
+            }
+            {
+                let name = ["sobaan", "uday", "shailender", "sourabh"];
+                console.log(name);
+            }
+
+            //question : for a given array  with marks of students => [85,97,44,37,76,60] find the average marks of the entire class
+            {
+                let marks = [85, 97, 85, 37, 76, 60];
+                let sum = 0;
+
+                for (let i = 0; i < marks.length; i++) {
+                    sum = sum + marks[i];
+
+                }
+                console.log("the  average is :" + Math.round(sum / marks.length));
+            }
+
+          
+        </script>
 </body>
 
 </html>
