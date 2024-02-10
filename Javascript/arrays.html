@@ -137,6 +137,42 @@
                 console.log(`The Average of the array is`, items);
 
             }
+
+            //Array method : push()  , pop() , shift() , unshift() , splice() 
+            {
+                let fruits = ['apple', 'banana'];
+                console.log('Before Push: ', fruits)
+                fruits.push('orange');
+                console.log('After Push: ', fruits)
+
+                console.log('\n\n')
+
+                let numbers = [1, 2, 3, 4, 5];
+                console.log('Before Pop: ', numbers)
+                numbers.pop();
+                console.log('After Pop: ', numbers)
+
+                console.log('\n\n')
+
+                let cars = ['BMW', 'Mercedes', 'Audi'];
+                console.log('Cars Array Before Shift: ', cars)
+                cars.shift();
+                console.log('Cars Array After Shift: ', cars)
+
+                console.log('\n\n')
+
+                let colors = ['Red', 'Green', 'Blue']
+                colors.unshift('Yellow')
+                console.log('Colors Array After UnShift: ', colors)
+
+                console.log('\n\n')
+
+                let arr = [1, 2, 3, 4, 5];
+                arr.splice(2, 1);   //removes one element from index 2 and takes no new elements
+                console.log("After Splicing at Index 2", arr);
+            }
+
+            
         </script>
 </body>
 
