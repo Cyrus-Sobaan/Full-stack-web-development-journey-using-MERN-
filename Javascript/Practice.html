@@ -159,6 +159,79 @@
 
         let names = ["sobaan", "abuzar", "aijaz", "nomaan", "shoyab"];
         console.log(names);
+        {
+            //using for loops
+            for (let i = 0; i < names.length; i++) {
+                console.log(names[i]);
+            }
+        }
+
+        {
+            //using for of loops
+
+            for (name of names) {
+                console.log(name);
+            }
+
+            //using for of loops with uppercase string method
+
+            for (name of names) {
+                console.log(name.toUpperCase());
+            }
+        }
+
+        {
+            //calculate the average of marks using for of loops
+
+            let marks = [85, 97, 44, 37, 76, 60]
+            let sum = 0;
+            for (let value of marks) {
+                sum = sum + value;
+            }
+            console.log(sum / marks.length)
+            console.log(sum)
+        }
+
+        {
+            //calculate the average of marks using for loops
+
+            let num = [85, 97, 44, 37, 76, 60]
+            let sum = 0;
+            for (let i = 0; i < num.length; i++) {
+                sum = sum + num[i];
+
+            }
+            console.log(sum / num.length)
+            console.log(sum)
+        }
+
+        {
+            // apply 10% offer of all items
+            // using for loops
+            let items = [250, 645, 300, 900, 50]
+            for (let i = 0; i < items.length - 1; i++) {
+                let offer = items[i] / 10;
+                items[i] = items[i] - offer;
+            }
+            console.log(items)
+
+        }
+
+        {
+            //using for of loops
+
+            let items = [250, 645, 300, 900, 50]
+            let i = 0;
+            for (let val of items) {
+                let offer = val / 10;
+                items[i] = items[i] - offer;
+                console.log(items[i])
+                i++
+            }
+
+        }
+
+        
     </script>
 </body>
 
