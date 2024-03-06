@@ -9,76 +9,156 @@
 
 <body>
     <script>
-        console.log("hello world"); // this will print "hello world" in the browser's console
-        alert("hello world");   // this will show an alert box with "hello world" as its message
-        prompt("Enter your Full name");   // This will open a dialog box asking for user input and returns it
-        document.write("hello world")   // This will write "hello world" on the web page
+        // console.log("hello world"); // this will print "hello world" in the browser's console
+        // alert("hello world");   // this will show an alert box with "hello world" as its message
+        // prompt("Enter your Full name");   // This will open a dialog box asking for user input and returns it
+        // document.write("hello world")   // This will write "hello world" on the web page
 
-        // let num1 = 5;
-        // let num2 = 4;
+        {
+            let num1 = 5;
+            let num2 = 4;
 
-        // console.log(num1 + num2);
-
-        // //Practice: if else
-        // let number1 = 5;
-        // let number2 = 8;
-
-        // if (number1 > number2)
-        //     console.log('Number one is greater');
-        // else
-        //     console.log('Number two is greater');
-
-        // //practice: for loops
-
-
-        // for (let i = 1; i <= 5; i++) {
-        //     console.log(i);//print 1 to 5 number  by using loop
-        // }
-
-        // //sum of 1 to 5  numbers using for loops
-        // console.log("Sum of first 5 natural numbers is : ");
-        // let sum = 0;
-        // for (let i = 0; i <= 5; i++) {
-        //     sum = sum + i;
-        // }
-        // console.log(sum)
-
-
-        // sum of 1 to n number  using loop
-
-        // console.log("sum  of all natural numbers till given limit : ");
-
-        // let sum = 0;
-        // let n = 5;
-
-        // for (let i = 0; i <= n; i++) {
-        //     sum = sum + i;
-
-        // }
-        // console.log(sum);
-
-
-        //practice: while loops
-
-        // let i = 1;
-        // while (i <= 5) {
-        //     console.log(i)
-        //     i++;
-        // }
-
-        // //practice: do while loops
-        // let j = 1;
-        // do {
-        //     console.log(j);
-        //     j++;
-        // }
-        // while (j <= 10);
-
-        //practice: for of loops is  used when we want to iterate over an array or other iterable objects.
-        let str = "Sobaan";
-        for (let i of str) {
-            console.log(i)
+            console.log(num1 + num2);     // Output: 9
         }
+
+        {
+            //Practice: if else
+            let number1 = 5;
+            let number2 = 8;
+
+            if (number1 > number2)
+                console.log('Number one is greater');
+            else
+                console.log('Number two is greater');
+
+        }
+        {
+            //practice: for loops
+
+
+            for (let i = 1; i <= 5; i++) {
+                console.log(i);//print 1 to 5 number  by using loop
+            }
+
+        }
+
+
+        {
+            //sum of 1 to 5  numbers using for loops
+            console.log("Sum of first 5 natural numbers is : ");
+            let sum = 0;
+            for (let i = 0; i <= 5; i++) {
+                sum = sum + i;
+            }
+            console.log(sum)
+        }
+
+
+        {
+            // sum of 1 to n number  using loop
+
+            console.log("sum  of all natural numbers till given limit : ");
+
+            let sum = 0;
+            let n = 5;
+
+            for (let i = 0; i <= n; i++) {
+                sum = sum + i;
+
+            }
+            console.log(sum);
+        }
+
+
+        {
+            // practice: while loops
+
+            let i = 1;
+            while (i <= 5) {
+                console.log(i)
+                i++;
+            }
+        }
+
+        {
+            //practice: do while loops
+            let j = 1;
+            do {
+                console.log(j);
+                j++;
+            }
+            while (j <= 10);
+        }
+
+        {
+            // practice: for of loops is  used when we want to iterate over an array or other iterable objects.
+            let str = "Sobaan";
+            for (let i of str) {
+                console.log(i)
+            }
+        }
+
+        {
+            //for in loop is  used to iterate over the properties of an object
+
+            let person = {
+                name: "Sobaan",
+                age: 24,
+                city: "jaipur",
+            }
+            for (let key in person) {
+                console.log("key is :", key, "value is :", person[key])
+            }
+        }
+
+        {
+            // Question practice : print all natural number 1 to 100 using for loops
+
+            for (let i = 0; i <= 100; i++) {
+                console.log(i)
+            }
+        }
+
+        {
+            //print all even number  1 to 100
+
+            //exaple 1:
+            for (let i = 0; i <= 100; i += 2) {
+                console.log(i)
+            }
+
+            //example 2:
+            for (let i = 0; i <= 100; i++) {
+                if (i % 2 == 0) {
+                    console.log("print even number", i)
+                }
+
+            }
+        }
+
+        {
+            //print all odd number  1 to 100
+
+            //example 1:
+            for (let i = 1; i <= 100; i += 2) {
+                console.log(i)
+            }
+
+            //example 2:
+            for (let i = 0; i <= 100; i++) {
+                if (i % 2 != 0) {
+                    console.log("print odd number", i)
+                }
+
+            }
+
+
+        }
+
+        //practice: Arrays in javascript: array is a collection of data that can hold multiple values.
+
+        let names = ["sobaan", "abuzar", "aijaz", "nomaan", "shoyab"];
+        console.log(names);
     </script>
 </body>
 

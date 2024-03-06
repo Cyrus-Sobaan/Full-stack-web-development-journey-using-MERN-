@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For-Loops statements</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For-Loops statements</title>
 </head>
+
 <body>
-    <script>
-         // For loops : Loops are used to execute  a piece of code again & again
+  <script>
+    // For loops : Loops are used to execute  a piece of code again & again
 
     {
       console.log("for loop: Print 1 to 5 number");
@@ -50,6 +52,34 @@
         num++;
       } while (num <= 5);
     }
-    </script>
+
+    // for of loop :  Used to iterate over iterable objects like array, string etc.
+    // let str="Javascript";
+    // for(let i of str){
+    //   console.log(i);
+    // }
+
+    //size of string example
+    // let str = "Javascript";
+
+    // let size = 0;
+    // for (let i of str) {
+    //   console.log(i);
+    //   size++;
+    // }
+    // console.log(`Size of ${str} is ${size}`);
+
+    //for in loop :  used to iterate over an object's properties
+
+    let students = {
+      name: "ezbhai",
+      age: 25,
+      city: "Mumbai",
+    };
+    for (let i in students) {
+      console.log("key is ", i, "value is",students[i]);
+    }
+  </script>
 </body>
+
 </html>
