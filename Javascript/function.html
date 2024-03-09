@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finctions in javascript</title>
 </head>
+
 <body>
     <script>
         //function in javascript  is a block of code that performs a specific task.  It can be called multiple times from different parts of the program. Functions are reusable and make
         // Function declaration  - hoisting is not applicable for function declarations
-        console.log(myFunction()); // undefined
-        
-        function myFunction() {
-            return "Hello World!";
+        {
+            //
+            function myFunction() {
+                console.log("write syntax of javascript");
+                console.log("here is the syntax of javascript");
+            }
+
+            myFunction();
+            myFunction();
         }
-        console.log(myFunction()); // Hello World!
-        
+
+        {
+            function myFunction(msg) {
+                //paratmeter -> input
+                console.log(msg);
+            }
+            myFunction("This is a message from the function");//this is argument
+        }
+
+        {
+            //two number sum function in js
+
+            function sum(a, b) {
+                console.log(a + b);
+            }
+            sum(5, 6);//5+6 = 11
+        }
+
+        {
+            //arrow function in js
+
+            function sum(a, b) {
+                return a + b;
+            }
+            const arrowSum = (a, b) => {
+                console.log(a + b);
+            }
+        }
+
+
+
+
+
     </script>
 </body>
+
 </html>
