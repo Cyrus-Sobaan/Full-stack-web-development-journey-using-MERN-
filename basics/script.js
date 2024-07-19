@@ -11,8 +11,8 @@
 
 // Arithmatic operators
 
-let a = 5;
-let b = 2;
+// let a = 5;
+// let b = 2;
 
 
 // console.log("a =", a,  "& b =",b)
@@ -31,5 +31,12 @@ let b = 2;
 
 //Assignment operators
 
-// console.log("a+=b", a += b) it means a=a+1;
-// console.log("a-=b =", a-= b) means a=a-1
+let a = 5;
+let b = 2;
+
+// a += 4; plus uqualto
+// a -= 4; minus equalto
+// a %= 4; modulus equal
+// a **= 4; exponentiation equal
+
+// console.log("a =",a)
