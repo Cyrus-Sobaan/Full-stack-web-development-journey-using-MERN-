@@ -52,20 +52,20 @@
 
 //Logical operators (Logical AND operators)
 
-// let a = 5;
+// let a = 6;
 // let b = 5;
 //  console.log(a > b && a===b) first way to declare
 
 // let cond1 = a < b;
-// let cond2 = a ===b;
+// let cond2 = a === b;
 
 // console.log( cond1 && cond2) 2nd way to decalre a variable
 
 //(Logical OR operators)
-
 // console.log(a > b || a===b) first way to declare
 
 //Logical NOT 
+// console.log("6 < 5",!(a < b)) //its opposite the actual result
 
 // console.log(a > b ! a===b) first way to declare
 
@@ -82,24 +82,57 @@
 //     console.log(num, "Not a multiple of 5")
 // }
 
-let score = prompt("Enter your Score(0-100)");
-if(score >= 90 && score <= 100){
-    console.log("Grade A");
+// let score = prompt("Enter your Score(0-100)");
+// if(score >= 90 && score <= 100){
+//     console.log("Grade A");
+// }
+// else if(score >= 70 && score <=89){
+//     console.log("Grade B");
+// }
+// else if(score >= 60 && score <=69){
+//     console.log("Grade C");
+// }
+// else if(score >= 50 && score <=59){
+//     console.log("Grade D");
+// }
+// else if(score >= 0 && score <=49){
+//     console.log("Grade E");
+// }
+// else{
+//     console.log("Failed")
+// // }
+
+
+//loops in javascript
+
+//for loops
+// for(let i = 1;i<=5;i++){
+//     console.log("javascript");
+// }
+
+// calculate the sum of 1 to 5 using for loops
+// let n=5;
+// let sum=0;
+// for(let i=1;i<=n;i++){
+//     sum=sum+i;
+// }
+// console.log(sum)
+
+
+// while loops
+// let i=1;
+// while(i <= 5){
+//     console.log("javascript", i);
+//     i++;
+// }        
+
+
+//Do while loops
+let n=1;
+do{
+    console.log("print number");
+
 }
-else if(score >= 70 && score <=89){
-    console.log("Grade B");
-}
-else if(score >= 60 && score <=69){
-    console.log("Grade C");
-}
-else if(score >= 50 && score <=59){
-    console.log("Grade D");
-}
-else if(score >= 0 && score <=49){
-    console.log("Grade E");
-}
-else{
-    console.log("Failed")
-}
+while(n <= 5)
 
 
